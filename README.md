@@ -15,7 +15,7 @@
 
 | Resource | Details |
 |---|---|
-| **Live POC URL** | [https://3000-irkkmj4d0310bmuk20ljm-85fdd0df.sg2.manus.computer](https://3000-irkkmj4d0310bmuk20ljm-85fdd0df.sg2.manus.computer) |
+| **Live POC URL** | [https://aegis-nexus-alpha.vercel.app/](https://aegis-nexus-alpha.vercel.app/) |
 | **Demo Analyst Email** | `analyst@aegisnexus.com` |
 | **Demo Password** | `demo123` |
 
