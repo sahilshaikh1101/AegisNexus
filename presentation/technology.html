@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #07111d; 
+        color: #e9f4f8; 
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        overflow: hidden;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 80px;
+      }
+      .kicker {
+        font-family: monospace;
+        font-size: 14px;
+        letter-spacing: 4px;
+        color: #35d7e9;
+        text-transform: uppercase;
+      }
+      .title {
+        font-size: 56px;
+        font-weight: 900;
+        letter-spacing: -2px;
+        margin-top: 10px;
+        line-height: 1;
+      }
+      .main-grid {
+        display: grid;
+        grid-template-columns: 1fr 8px 1fr;
+        margin-top: 60px;
+        height: 450px;
+      }
+      .column {
+        padding-top: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      .divider {
+        background: #214157;
+        height: 100%;
+      }
+      .tech-item {
+        margin-bottom: 40px;
+      }
+      .tech-label {
+        font-family: monospace;
+        font-size: 12px;
+        color: #35d7e9;
+        margin-bottom: 8px;
+        display: block;
+      }
+      .tech-value {
+        font-size: 24px;
+        font-weight: 700;
+        display: block;
+      }
+      .tech-desc {
+        font-family: monospace;
+        font-size: 14px;
+        color: #9ab0bd;
+        margin-top: 8px;
+        line-height: 1.5;
+      }
+      .chart-container {
+        height: 300px;
+        margin-top: 20px;
+      }
+      .footer-tag {
+        position: absolute;
+        bottom: 40px;
+        left: 80px;
+        font-family: monospace;
+        font-size: 12px;
+        color: #4A4A4A;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <span class="kicker">05 / ARCHITECTURE</span>
+            <h1 class="title">Technology supports a fast, feasible build.</h1>
+        </div>
+
+        <div class="main-grid">
+            <div class="column">
+                <div class="tech-item">
+                    <span class="tech-label">CORE STACK</span>
+                    <span class="tech-value">React + TypeScript + Vite</span>
+                    <p class="tech-desc">High-performance frontend for complex incident state management and real-time visualization.</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-label">DATA PERSISTENCE</span>
+                    <span class="tech-value">Local Browser Storage</span>
+                    <p class="tech-desc">Lightweight, zero-latency record keeping for the POC environment without backend overhead.</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="column">
+                <div class="tech-item">
+                    <span class="tech-label">SCORING ENGINE</span>
+                    <span class="tech-value">Deterministic Explainability</span>
+                    <p class="tech-desc">Weighted evidence contributions and policy bands ensure every risk score is auditable.</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="modularityChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-tag">NEXUS 2026 / AEGISNEXUS / BUILD 0.9.0</div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('modularityChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['UI Layer', 'Logic', 'Storage', 'Detectors'],
+                datasets: [{
+                    label: 'Modularity Score',
+                    data: [95, 90, 85, 80],
+                    backgroundColor: '#35d7e9',
+                    borderColor: '#35d7e9',
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: {
+                        display: false,
+                        grid: { display: false }
+                    },
+                    y: {
+                        ticks: {
+                            color: '#e9f4f8',
+                            font: { family: 'monospace', size: 12 }
+                        },
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

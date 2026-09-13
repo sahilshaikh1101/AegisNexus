@@ -1,0 +1,133 @@
+{
+  "project_info": {
+    "title": "AegisNexus",
+    "created": 1789278353.466,
+    "last_updated": 1789278492.659,
+    "total_slides": 12
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "problem",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "solution",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "workflow",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "dynamic_poc",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "technology",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "demo",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "impact",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "complete_next",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "research",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "ask",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "references",
+      "state": "edited",
+      "pageNum": 12
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "AegisNexus",
+      "summary": "Explainable defense against coordinated communication fraud. GLS Nexus Hackathon 2026."
+    },
+    {
+      "id": "problem",
+      "title": "The problem is coordinated, not isolated",
+      "summary": "Business email compromise combines identity, urgency, links, voice, and infrastructure signals; analysts face fragmented alerts and high-impact decisions."
+    },
+    {
+      "id": "solution",
+      "title": "Our solution creates one explainable incident",
+      "summary": "Correlate communication, identity, media, and network evidence into one incident with visible risk, confidence, impact, relationships, and human control."
+    },
+    {
+      "id": "workflow",
+      "title": "The workflow is simple and auditable",
+      "summary": "Record or select an incident, add evidence and attachments, review the decision surface, approve safely, and export a portable record."
+    },
+    {
+      "id": "dynamic_poc",
+      "title": "The POC is dynamic, not a static mockup",
+      "summary": "Show login, manual incident creation, dynamic dashboard and graph updates, attachments, local persistence, and export."
+    },
+    {
+      "id": "technology",
+      "title": "Technology supports a fast, feasible build",
+      "summary": "React, TypeScript, Vite, browser persistence, deterministic explainable scoring, and a modular path to enterprise integrations."
+    },
+    {
+      "id": "demo",
+      "title": "Demo: CFO payment diversion",
+      "summary": "A critical simulated incident with risk 95/100, confidence 94%, $84,500 impact, and five correlated signals requiring analyst review.",
+      "image_plan": "/home/ubuntu/upload/search_images/QSWi9rhvbuQN.jpg - Demo slide showing a futuristic security dashboard/control room matching the SOC context"
+    },
+    {
+      "id": "impact",
+      "title": "Impact: better decisions with less fragmentation",
+      "summary": "One decision surface reduces fragmented investigation, makes scoring inspectable, creates portable handoff records, and adapts to new partner requirements."
+    },
+    {
+      "id": "complete_next",
+      "title": "What is complete and what comes next",
+      "summary": "Completed POC capabilities and the production hardening roadmap: secure backend auth, integrations, audit logs, calibrated detectors, and testing."
+    },
+    {
+      "id": "research",
+      "title": "Research basis and responsible design",
+      "summary": "FBI BEC guidance, NIST AI RMF, CISA phishing guidance, and deliberate human approval and limitations."
+    },
+    {
+      "id": "ask",
+      "title": "The ask",
+      "summary": "AegisNexus turns scattered communication warnings into one explainable, human-approved incident decision. Thank you."
+    },
+    {
+      "id": "references",
+      "title": "References",
+      "summary": "FBI Business Email Compromise; NIST AI Risk Management Framework; CISA Phishing Guidance."
+    }
+  ]
+}

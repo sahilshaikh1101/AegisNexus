@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research & Responsible Design</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        background: #07111d; 
+        color: #e9f4f8; 
+        font-family: Arial, sans-serif;
+        position: relative;
+      }
+      .inner { padding-top: 64px; padding-left: 84px; padding-right: 84px; }
+      .kicker { font: 12px monospace; letter-spacing: 3px; color: #6de7f7; text-transform: uppercase; }
+      .title { margin-top: 24px; font-size: 48px; font-weight: 800; letter-spacing: -2px; line-height: 1.1; }
+      
+      .research-grid { 
+        display: grid; 
+        grid-template-columns: 1fr 8px 1fr 8px 1fr; 
+        margin-top: 60px; 
+        min-height: 380px;
+      }
+      .column { padding-top: 20px; }
+      .divider { background: #214157; height: 100%; }
+      
+      .research-item { margin-bottom: 32px; }
+      .research-label { font: bold 10px monospace; color: #35d7e9; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; display: block; }
+      .research-item h3 { font-size: 20px; margin-bottom: 12px; line-height: 1.2; }
+      .research-item p { font: 13px monospace; color: #9ab0bd; line-height: 1.6; }
+      
+      .safety-callout { 
+        position: absolute; 
+        bottom: 60px; 
+        left: 84px; 
+        right: 84px; 
+        border-top: 4px solid #b856d9; 
+        padding-top: 20px; 
+        font: 16px monospace; 
+        color: #e9f4f8;
+      }
+      .safety-callout span { color: #b856d9; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="inner">
+            <div class="kicker">09 / RESEARCH & RESPONSIBILITY</div>
+            <h1 class="title">Grounded in research and responsible design.</h1>
+            
+            <div class="research-grid">
+                <div class="column">
+                    <div class="research-item">
+                        <span class="research-label">FBI / BEC PATTERNS</span>
+                        <h3>Coordinated Fraud</h3>
+                        <p>Aligned with FBI findings on spoofed accounts, spearphishing, and urgent payment requests as core BEC attack vectors.</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="column" style="padding-left: 30px; padding-right: 30px;">
+                    <div class="research-item">
+                        <span class="research-label">NIST / AI RMF</span>
+                        <h3>Trustworthy AI</h3>
+                        <p>Follows NIST principles for explainability, transparency, and human-centric risk management in AI-assisted systems.</p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="column" style="padding-left: 30px;">
+                    <div class="research-item">
+                        <span class="research-label">CISA / PHISHING</span>
+                        <h3>Early Containment</h3>
+                        <p>Implements CISA guidance on stopping the attack cycle early through evidence review and strengthened defensive practices.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="safety-callout">
+                <span>RESPONSIBLE DESIGN:</span> Human-in-the-loop approval is a deliberate safety gate for all high-impact actions.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

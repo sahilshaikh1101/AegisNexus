@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>References</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #07111d;
+            color: #e9f4f8;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        .inner {
+            padding-top: 64px;
+            padding-left: 84px;
+            padding-right: 84px;
+        }
+        .kicker {
+            font: 12px monospace;
+            letter-spacing: 3px;
+            color: #6de7f7;
+            text-transform: uppercase;
+        }
+        .title {
+            margin-top: 24px;
+            font-size: 48px;
+            font-weight: 800;
+            letter-spacing: -2px;
+            line-height: 1.1;
+        }
+        .ref-list {
+            margin-top: 60px;
+            border-top: 4px solid #214157;
+        }
+        .ref-item {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #214157;
+            display: flex;
+            gap: 40px;
+        }
+        .ref-num {
+            font: bold 24px monospace;
+            color: #35d7e9;
+            flex: 0 0 40px;
+        }
+        .ref-content {
+            flex: 1;
+        }
+        .ref-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .ref-url {
+            font: 14px monospace;
+            color: #9ab0bd;
+            word-break: break-all;
+        }
+        .footer-note {
+            position: absolute;
+            bottom: 60px;
+            left: 84px;
+            font: 12px monospace;
+            color: #4A4A4A;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="inner">
+            <div class="kicker">12 / CITATIONS</div>
+            <h1 class="title">References</h1>
+            
+            <div class="ref-list">
+                <div class="ref-item">
+                    <div class="ref-num">[1]</div>
+                    <div class="ref-content">
+                        <div class="ref-title">FBI — Business Email Compromise</div>
+                        <div class="ref-url">https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/business-email-compromise</div>
+                    </div>
+                </div>
+                <div class="ref-item">
+                    <div class="ref-num">[2]</div>
+                    <div class="ref-content">
+                        <div class="ref-title">NIST — AI Risk Management Framework</div>
+                        <div class="ref-url">https://www.nist.gov/itl/ai-risk-management-framework</div>
+                    </div>
+                </div>
+                <div class="ref-item">
+                    <div class="ref-num">[3]</div>
+                    <div class="ref-content">
+                        <div class="ref-title">CISA — Phishing Guidance: Stopping the Attack Cycle at Phase One</div>
+                        <div class="ref-url">https://www.cisa.gov/resources-tools/resources/phishing-guidance-stopping-attack-cycle-phase-one</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-note">GLS NEXUS HACKATHON 2026 / AEGISNEXUS</div>
+    </div>
+</body>
+</html>
