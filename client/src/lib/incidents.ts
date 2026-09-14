@@ -21,6 +21,7 @@ export interface IncidentSignal {
   score: number;
   color: SignalColor;
   detail: string;
+  mitreId?: string;
 }
 
 export interface Incident {
@@ -41,11 +42,11 @@ export interface Incident {
 }
 
 const criticalSignals: IncidentSignal[] = [
-  { id: "email", label: "Urgent payment request", type: "EMAIL", source: "CFO mailbox", score: 20, color: "cyan", detail: "Language pattern matches high-pressure payment fraud." },
-  { id: "url", label: "Look-alike payment domain", type: "URL", source: "invoice-portal.co", score: 25, color: "magenta", detail: "Domain differs from the approved finance portal by one character." },
-  { id: "audio", label: "Voice note authenticity anomaly", type: "AUDIO", source: "WhatsApp voice note", score: 15, color: "amber", detail: "Speaker embedding and channel history do not match the executive profile." },
-  { id: "identity", label: "Unapproved communication channel", type: "IDENTITY", source: "Unknown mobile", score: 20, color: "magenta", detail: "CFO profile allows email and Teams; this sender used an unknown number." },
-  { id: "network", label: "Related infrastructure alert", type: "NETWORK", source: "DNS / 185.91.22.14", score: 15, color: "cyan", detail: "The domain shares infrastructure with two prior blocked indicators." },
+  { id: "email", label: "Urgent payment request", type: "EMAIL", source: "CFO mailbox", score: 20, color: "cyan", mitreId: "T1566.002", detail: "Language pattern matches high-pressure payment fraud." },
+  { id: "url", label: "Look-alike payment domain", type: "URL", source: "invoice-portal.co", score: 25, color: "magenta", mitreId: "T1584.001", detail: "Domain differs from the approved finance portal by one character." },
+  { id: "audio", label: "Voice note authenticity anomaly", type: "AUDIO", source: "WhatsApp voice note", score: 15, color: "amber", mitreId: "T1656", detail: "Speaker embedding and channel history do not match the executive profile." },
+  { id: "identity", label: "Unapproved communication channel", type: "IDENTITY", source: "Unknown mobile", score: 20, color: "magenta", mitreId: "T1586.002", detail: "CFO profile allows email and Teams; this sender used an unknown number." },
+  { id: "network", label: "Related infrastructure alert", type: "NETWORK", source: "DNS / 185.91.22.14", score: 15, color: "cyan", mitreId: "T1583.001", detail: "The domain shares infrastructure with two prior blocked indicators." },
 ];
 
 export const demoIncidents: Incident[] = [
