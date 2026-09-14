@@ -16,6 +16,7 @@
 | Resource | Details |
 |---|---|
 | **Live POC URL** | [https://aegis-nexus-alpha.vercel.app/](https://aegis-nexus-alpha.vercel.app/) |
+| **Presentation Deck** | [NexusHackathon_Presentation.pptx](docs/NexusHackathon_Presentation.pptx) |
 | **Demo Analyst Email** | `analyst@aegisnexus.com` |
 | **Demo Password** | `demo123` |
 
