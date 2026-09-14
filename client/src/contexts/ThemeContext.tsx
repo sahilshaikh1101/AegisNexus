@@ -1,11 +1,14 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
 type Theme = "light" | "dark";
+export type Appearance = "ocean" | "violet" | "emerald";
 
 interface ThemeContextType {
   theme: Theme;
   toggleTheme?: () => void;
   switchable: boolean;
+  appearance: Appearance;
+  setAppearance: (appearance: Appearance) => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -28,6 +31,9 @@ export function ThemeProvider({
     }
     return defaultTheme;
   });
+  const [appearance, setAppearance] = useState<Appearance>(() =>
+    (localStorage.getItem("aegisnexus.appearance") as Appearance) || "ocean"
+  );
 
   useEffect(() => {
     const root = document.documentElement;
@@ -42,6 +48,11 @@ export function ThemeProvider({
     }
   }, [theme, switchable]);
 
+  useEffect(() => {
+    document.documentElement.dataset.appearance = appearance;
+    localStorage.setItem("aegisnexus.appearance", appearance);
+  }, [appearance]);
+
   const toggleTheme = switchable
     ? () => {
         setTheme(prev => (prev === "light" ? "dark" : "light"));
@@ -49,7 +60,7 @@ export function ThemeProvider({
     : undefined;
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, switchable }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, switchable, appearance, setAppearance }}>
       {children}
     </ThemeContext.Provider>
   );

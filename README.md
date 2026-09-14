@@ -195,6 +195,15 @@ AegisNexus/
 
 ---
 
+## Core Engineering Team
+
+| Name | GitHub Profile | Role |
+|---|---|---|
+| **Mohammad Sahil** | [@sahilshaikh1101](https://github.com/sahilshaikh1101) | Lead Architect & Full-Stack Engineer |
+| **Zainab Memon** | [@zainab-m54](https://github.com/zainab-m54) | AI Research & Threat Intelligence Engineer |
+
+---
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).

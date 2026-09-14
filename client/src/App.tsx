@@ -36,6 +36,7 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider
         defaultTheme="dark"
+        switchable
         // Signal Room is intentionally dark: the interface uses semantic cyan, magenta, and amber signals.
       >
         <TooltipProvider>
